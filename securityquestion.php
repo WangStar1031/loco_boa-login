@@ -77,6 +77,7 @@
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 1</label>
                       <select name="q1" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
+                        <option></option>
                         <?php
                         foreach ($lstQ1 as $value) {
                           echo "<option>$value</option>";
@@ -86,10 +87,15 @@
                         ?>
                       </select>
                     </div>
+                    <div class="inputContainer">
+                      <label>Question 1 Answer</label>
+                      <input type="text" name="a1">
+                    </div>
 
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 2</label>
                       <select name="q1" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
+                        <option></option>
                         <?php
                         foreach ($lstQ2 as $value) {
                           echo "<option>$value</option>";
@@ -99,10 +105,15 @@
                         ?>
                       </select>
                     </div>
+                    <div class="inputContainer">
+                      <label>Question 2 Answer</label>
+                      <input type="text" name="a2">
+                    </div>
 
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 3</label>
                       <select name="q1" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
+                        <option></option>
                         <?php
                         foreach ($lstQ3 as $value) {
                           echo "<option>$value</option>";
@@ -111,6 +122,10 @@
                         }
                         ?>
                       </select>
+                    </div>
+                    <div class="inputContainer">
+                      <label>Question 3 Answer</label>
+                      <input type="text" name="a3">
                     </div>
 									</fieldset>
 								</div>
