@@ -1,0 +1,266 @@
+/* =============================================================================
+ BAC Touch cmw_toolBar_
+   ========================================================================== */
+.cmw_toolBar_ {    
+/*44px height - 1px for top - 1px for bottom border = 42px.*/
+/*top border
+*rgb (255,0,69,1)
+*hex #ff0045
+1px
+*/
+/*rgba to hex
+*rgba (217,0,59,1)
+*hex #D9003B
+*/
+/*bottom border
+*rgba (174,0,47,1)
+*hex #ae002f
+1px
+*/
+background: rgba(217,0,59,1);
+line-height:42px;
+height: 42px;
+width: 100%;
+border-top: 1px solid rgba(255,0,69,1);
+border-bottom: 1px solid rgba(174,0,47,1);
+}   
+.cmw_toolBar_ h1 {       
+	text-align:center;
+}   
+.cmw_toolBar_  h1.logo{     
+	/*background:url('../images/logo.png') no-repeat center;     */
+	height: 38px; 
+} 
+#cmw_toolBar_titleText{
+	display:inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 1px 0 rgba(0,0,0,.1);
+	font-size:16px;
+}
+.titleTextAppend{
+	display: inline-block;
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 1px 0 rgba(0,0,0,.1);
+	font-size: 16px;
+	overflow:hidden;
+}
+.cmw_toolBar_ h1 span.tradeMark{
+	position: relative; 
+	bottom:4px; 
+	display:inline-block;
+	font-size:.675em;
+}
+span.superscript {
+    font-size: .83em;
+    line-height: 0.5em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+span.superscript.small {
+    font-size: .78em;
+    line-height: 0.5em;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+	left:-0.3em;
+}
+.backButton {     
+	position:absolute;
+	height:30px;
+}
+.leftButton {
+	position:absolute;
+	top: 5px;
+	left: 5px;
+	display: inline-block;
+	background:rgba(120,14,51,.60);
+	margin:0;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	max-height:30px;
+	line-height:30px;
+	text-align:center;	
+}
+.rightButton {  
+	position:absolute;
+	top: 5px;
+	right:5px;
+	display:inline-block;
+	background:rgba(120,14,51,.60);
+	margin:0;
+	-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+			border-radius: 4px;
+	max-height:30px;
+	line-height:30px;
+	text-align:center;	
+}   
+.rightButtonIcon {  
+	position:absolute;
+	top: 5px;
+	right:5px;
+	width:25px;
+	display:block;
+}  
+.rightButton span.buttonText,
+.leftButton span.buttonText{  
+	display:inline-block; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	min-width:42px;
+	font-size:13px;
+	font-weight:bold;
+	padding-left:5px;
+	padding-right:5px;
+	color:rgba(255,255,255,1);
+	text-shadow:0px 1px 0px rgba(255,255,255,.1);
+}
+a.rightButton span.filterIcon,
+a.leftButton span.filterIcon{
+	display:inline-block;
+	height:11px;
+	width:11px;
+	/*background: url("../images/flitered.png") no-repeat top left rgba(120,14,51,.60);*/
+}
+.backButton.icon, .rightButton.icon{
+	width:42px;
+	height:40px;
+}
+.sprite{
+	/*background: url("../images/header.png") no-repeat top left;*/
+}
+.sprite-menu{
+	background-position:5px -155px; 
+	width: 30px; 
+	height: 30px;
+	border:none;
+}
+.sprite-back{
+	background-position:5px 3px; 
+	width: 30px; 
+	height: 30px;
+}
+.sprite-pfm{
+	background-position: 0 -239px; 
+	width: 30px; 
+	height: 30px;
+}
+.sprite-phone{
+	background-position: 0 -314px; 
+	width: 30px; 
+	height: 30px;
+}
+.sprite-share{
+	background-position: -2px -695px; 
+	width: 30px; 
+	height: 30px;
+}
+.sprite-closex{
+	background-position: -2px -785px; 
+	width: 30px; 
+	height: 30px;
+}
+.sprite-barker{
+	position:absolute;
+	top: 5px;
+	left: 30px;
+	width:41px;
+	height:30px;
+	background-position: 0 -80px; 
+	width: 39px; 
+	height: 29px;
+}
+span.barkerText{
+	position:relative;
+	bottom:24%;
+	left:50%;
+	text-align:center; 
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+}
+span.barkerText.twoChar{
+	left:42%;
+}
+span.barkerText.threeChar{
+	left:32%;
+}
+/*Begin media query for high resolution images*/
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2){
+	/* =============================================================================
+	 BAC Touch Toolbar @2x
+	   ========================================================================== */
+	.sprite{
+		/*background-image: url("../images/header@2x.png");*/
+		background-size: 40px;
+		background-repeat: no-repeat;
+	}  
+}	
+/*//End of media query for high resolution images*/
+span.barkerText{
+	position:relative;
+	bottom:24%;
+	left:50%;
+	text-align:center; 
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+}
+/*progress meter*/
+.cmw_toolBar_.meter{
+ line-height:20px;
+}
+h1.meter{
+ padding-top:2px;
+}
+h1.meter #cmw_toolBar_titleText{
+ font-size:13px;
+}
+.segmentContainer{
+display:inline-block;
+position:relative;
+top:-8px;
+overflow:hidden;
+margin:0;
+padding:0;           
+}
+.segment{
+display:inline-block; 
+overflow:hidden; 
+background: rgba(120,14,51,.60);
+height:2px; 
+width:25px;
+}
+.circle {
+display:inline-block;
+position: relative;
+top:2px;
+left:-1px;
+background: transparent;
+border:1px solid rgba(0,0,0,.6);
+height: 6px;
+width: 6px;
+-webkit-border-radius: 3px;
+	-moz-border-radius:3px;
+		border-radius:3px;
+}
+.segment.white{
+	background: rgba(255,255,255,1);}
+.circle.white{
+	background: rgba(255,255,255,1); 
+	border:none;
+}
+.segmentBreak{
+	display:inline-block; overflow:hidden; background:transparent; height:1px; width:1px;
+}
+.breakAll{
+/*breaks long strings*/
+	word-break:break-all;
+}
+.cmw_toolBar_Margin {
+	margin-top: 42px;

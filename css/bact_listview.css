@@ -1,0 +1,2050 @@
+ul.listView {
+	margin:0 9px 0 9px;
+	list-style: none;
+	background: transparent;
+}
+div.pageMargin > ul.listView{
+	margin:0;
+}
+div.pageMargin > ul.listView.marginTop14 {
+	margin-top: 14px !important;
+}
+ul.listView > li, 
+ul.listView > a{
+	min-height:44px;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	outline: 0;
+}
+ul.listView li, 
+ul.listView li.listItem{
+	border-color:rgba(218,212,203,1);
+	border-style:solid;
+	border-top:1px solid rgba(218,212,203,1);
+	border-left:1px solid rgba(218,212,203,1);
+	border-right:1px solid rgba(218,212,203,1);
+}
+ul.listView li.listItem:last-child{
+	border-bottom:1px solid rgba(218,212,203,1);
+}
+
+ul.listView li div.acct{
+	background: url("../images/acct_logo_bac@2x.png") left center no-repeat;
+	background-size:33px 33px;
+	float:none;
+	width:100%!important;
+	text-align:left!important;
+	font-size:12px; 
+	padding-left:40px!important;
+	color:rgba(51,46,37,1);
+	word-wrap: break-word;
+	display:inline-block!important;
+}
+
+ul.listView li a:active div.acct{
+	background: url("../images/acct_logo_bac_hit@2x.png") left center  no-repeat;	
+	background-size:33px 33px;	
+}
+
+ul.listView li div:first-child.acct.merrill{
+	background: url("../images/acct_logo_merrill@2x.png")left center no-repeat;
+	background-size:33px 33px;
+}
+ul.listView li a:active div.acct.merrill{
+	background: url("../images/acct_logo_merrill_white@2x.png") left center no-repeat;
+	background-size:33px 33px;
+}
+ul.listView li.icon {
+	float:none;
+	width:100%;
+	min-height:44px;
+	padding: 10px 10px 10px 10px;
+	background-color: rgba(255,255,255,1);
+}
+ul.listView li.icon span.icon{
+	color:rgba(51,46,37,1);
+	font-size:14px; 
+	font-weight: normal;
+	word-wrap: break-word;
+	display:inline-block;
+	min-height:44px;
+	padding: 0px 0px 0px 50px;
+}
+ul.listView li.icon span.ff{
+	background: url("../images/icon_FF_app@2x.png") left top no-repeat;
+	background-size:37px;
+}
+ul.listView li.icon span.ie{
+	background: url("../images/icon_IE_app@2x.png") left top no-repeat;
+	background-size:37px;
+}
+ul.listView li.icon span.safari{
+	background: url("../images/icon_safari_app@2x.png") left top no-repeat;
+	background-size:37px;
+}
+ul.listView li.icon span.chrome{
+	background: url("../images/icon_chrome_app@2x.png") left top no-repeat;
+	background-size:37px;
+}
+ul.listView li.icon span.boa{
+	background: url("../images/icon_BofA_app@2x.png") left top no-repeat;
+	background-size:37px;
+}
+ul.listView li.icon span.unknown{
+	background: url("../images/icon_unknown_app@2x.png") left top no-repeat;
+	background-size:37px;
+}
+ul.listView.transparent > li > a{
+	background-color:transparent;
+}
+ul.listView li div.acct p,
+ul.listView li a div.acct p{
+	font-size:19px; 
+}
+ul.listView  li.noLink,
+ul.listView.noLink li{
+	display:block;
+	text-decoration:none;
+	color:rgba(51,46,37,1);
+	font-weight:bold;
+	font-size:15px;
+
+	background-color:rgba(255,255,255,1);
+	/*The chevron image has a 6px right padding*/
+	padding:12px 0 12px 6px;
+	overflow:hidden;
+}
+ul.listView li.noLink:last-child,
+ul.listView.noLink li:last-child{
+border-bottom: 1px solid rgba(218,212,203,1);
+-webkit-border-bottom-right-radius: 8px;
+-webkit-border-bottom-left-radius: 8px;
+-moz-border-radius-bottomleft: 8px;
+-moz-border-radius-bottomright: 8px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+}
+ul.listView li.listItem,	
+ul.listView li.alertAction a,
+ul.listView > li > a {
+	display:block;
+	overflow:hidden;
+	background: url("../images/chevron.png") center right no-repeat;
+	background-color:rgba(255,255,255,1);
+	padding:12px 0px 12px 6px;
+	padding-right:23px;
+	color:rgba(51,46,37,1);
+	font-weight:bold;
+	font-size:15px;
+	min-height:44px;
+	text-decoration:none;
+}
+ul.listView > li > a.degraded,
+ul.listView > li > a:link.degraded,
+ul.listView > li > a:hover.degraded,
+ul.listView > li > a:visited.degraded,
+ul.listView > li > a:active.degraded {
+	background: url("../images/ico_alert@2x.png") no-repeat;
+	background-position: 99.5% 50%;
+	background-size: 18px 16px;
+	background-color:rgba(255,255,255,1);
+	color: rgba(107,94,81,1);
+}
+/*In some specs the margin from left is 10px instead of 6px*/
+ul.listView > li > a.paddingLeft10{
+	padding-left:10px;
+}
+ul.listView > li > a.fontSize13px{
+	font-size:13px;
+}
+
+ul.listView > li > a.topAlignedChevron {
+	background: #ffffff url("../images/chevron.png") top right no-repeat;
+	background-position-y: 12px;
+}
+ul.listView > li > a:active.topAlignedChevron{
+	background: rgb(1,124,194) url("../images/chevron_hit@2x.png") top right no-repeat;
+	background-position-y: 12px;
+	background-size:23px 23px;
+}
+ul.listView > li > a div{
+	color:rgba(51,46,37,1);
+}
+ul.listView > li > a div p{
+	font-size:13px;
+	padding-bottom:5px;
+}
+ul.listView.align > li > a > div > p,
+ul.listView.tableCell > li > a > div > p {
+	padding:0;
+	margin:0;
+}
+ul.listView.edge.align.noChevron > li > a div p.memotxt {
+	padding-top:10px;
+	padding-right:10px;
+}
+ul.listView > li > a div p.note{
+	padding-top:10px;
+	padding-bottom:6px;
+	font-size:9px;
+}
+ul.listView > li > a.loading{
+	background: rgba(255,255,255,1) url("../images/loadingLarge.gif") right no-repeat;
+	background-size:18px 18px;
+		-webkit-background-size:18px 18px;
+			-moz-background-size:18px 18px;
+	background-position: right 5px top 50%;
+}
+/*Three column listview*/
+ul.listView li a div.col3,
+ul.listView li div div.col3 {
+	float:left; 
+	width:33%;
+	font-weight:normal;
+	padding-right:5px;
+}
+ul.listView li a div.col3.txtCenter,
+ul.listView li div div.col3.txtCenter{
+	text-align:center;
+}
+ul.listView li a div.col3.txtLeft,
+ul.listView li div div.col3.txtLeft{
+	text-align:left;
+}
+ul.listView li a div.col3.txtRight,
+ul.listView li div div.col3.txtRight{
+	text-align:right;
+}
+ul.listView.edge li.noChevron  div.col3Container{
+	background-color:rgba(255,255,255,1);
+	color:rgba(0,0,0,1);
+}
+ul.listView.edge li.noChevron div.col3Container {
+	border:0px;
+	padding:0px 8px 0px 8px;
+}
+ul.listView.edge li.noChevron div.col3Container:first-child{
+	border:0px;
+	padding:8px 8px 0px 8px;
+}
+ul.listView.edge li.noChevron  div.col3Container:last-child{
+	border:0px;
+	padding:0px 8px 8px 8px;
+	padding:0px 8px 8px 8px;
+}
+ul.listView li a.error{
+ color: rgba(217,0,59,1);
+}
+
+ul.listView li a div p{
+	color:rgba(51,46,37,1);
+	font-weight:bold;
+	font-size:15px;
+}
+ul.listView li a div p.ellipse,
+ul.listView li a  p.ellipse{
+	color:rgba(51,46,37,1);
+	font-weight:bold;
+	font-size:15px;
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+ul.listView li a  p.ellipse{
+	width:95%;
+}
+ul.listView li a div.nickName:last-child{
+	width:50%; 
+}
+ul.listView li a div:last-child p.nickName{
+	float:right; 
+	width:100%;
+	word-wrap:break-word;
+	/*Whitespace is preserved by the browser. 
+	 *Text will only wrap on line beraks.
+	 *Acts like pre tag in HTML
+	*/
+	white-space: pre;
+}
+ul.listView li.noLink div:last-child p,
+ul.listView.noLink li div:last-child p,
+ul.listView li a div:last-child p,
+ul.listView li.listItem.confirm div:last-child{
+	font-weight:normal;
+}
+ul.listView li.noLink div:last-child p,
+ul.listView.noLink li div:last-child p,
+ul.listView li.listItem div:last-child p:first-child,
+ul.listView li a div:last-child p:first-child,
+ul.listView li a div:last-child p {
+	color:rgba(1,124,194,1);
+}
+ul.listView.noLink.confirm > li > div:last-child > p{
+	color:rgba(116,102,80,1);
+	font-size:11px;
+	text-align:right;
+}
+ul.listView li a div.acct p{
+	color:rgba(51,46,37,1);
+	font-weight:normal;
+	font-size:19px;
+}
+ul.listView li a div p,
+ul.listView li a div:only-child p:only-child {
+	color: rgba(51,46,37,1);
+	font-weight: bold;
+	font-size: 15px;
+}
+ul.listView li a div:only-child.homeLoan {
+    line-height: 25px;
+    background: url(../images/home-loan-nav-logo.svg) center left no-repeat;
+    -webkit-background-size: 28px 25px;
+    moz-background-size: 28px 25px;
+    background-size: 28px 25px;
+    height: 25px;
+}
+ul.listView  li  p.subVal,
+ul.listView.noLink li  p.subVal,
+ul.listView li.noLink p.subVal,
+ul.listView li.alertAction a p.subVal,
+ul.listView li.listItem p.subVal,
+ul.listView li.listItem div p.subVal,
+ul.listView li a span  p.subVal,
+ul.listView li a div p.subVal,
+ul.listView li a p span.subVal{
+	color:rgba(51,46,37,1);
+	font-size:12px;
+	font-weight:normal;
+}
+ul.listView li.alertAction a p.subVal,
+ul.listView li.listItem div p.subVal,
+ul.listView.edge li  a div p.subVal{
+	font-size:11px;
+}
+ul.listView li.noLink div p.subVal.blue,
+ul.listView.noLink li div p.subVal.blue,
+ul.listView li.alertAction a p.subVal.blue
+ul.listView li.listItem div p.subVal.blue,
+ul.listView li a div p.subVal.blue,
+ul.listView li a p span.subVal.blue{
+	color:rgba(1,124,194,1);
+}
+ul.listView.edge li.alertAction p.subVal black,
+ul.listView li.deals  a span.dealsText p.subVal.black,
+ul.listView.edge li.alertAction a p.subVal.black{
+	color:rgba(51,46,37,1);
+}
+ul.listView.edge li.alertAction a p{
+	font-size:12px;
+}
+ul.listView li a div p.alert, 
+ul.listView li a div:last-child p.alert {
+ color: rgba(217,0,59,1);
+}
+/*Listviews with button*/
+ul.listView > li.button > a.button > div > button.btn{
+	min-width:100px;
+	width:100%;
+	border:none;
+	font-size:14px;
+	position:relative; 
+	right:6px;
+}
+ul.listView > li.button > a.button{
+	padding:0 !important;
+	margin:0;
+}
+ul.listView > li.button > a.button > div:first-child{
+	padding:12px 0 12px 6px;	
+}
+ul.listView > li.button > a.button > div:first-child > p:only-child{
+	line-height:28px;
+}
+ul.listView > li.button > a.button > div:last-child{
+	padding:0;
+	margin-top:4px;
+}
+ul.listView > li.button > a.button > div:last-child > button.btn{
+	min-height:28px;
+	line-height:28px;
+}
+/*End listview with button*/
+/*Begin list view with date */
+ul.listView.edge > li.listItem > div.detail {
+	display: table;
+	float:none;
+	overflow:hidden; 
+	margin:0; 
+	text-align:left;
+}
+ul.listView.edge > li.listItem > div.detail > p{
+	display:table-cell; 
+	vertical-align: middle; 
+	text-align:left;   
+}
+ul.listView.edge > li.listItem > div.detail > p.date{
+	display:table-cell;
+	vertical-align: middle; 
+	float:left; 
+	padding-right:12px;    
+	color: rgba(51,46,37,1);
+	font-weight: bold;
+	font-size: 15px; 
+	text-align:center; 
+}
+ul.listView.edge > li.listItem > div.detail > p.date > span.day{
+	font-size:26px; 
+	margin:0; 
+	padding:0;
+}
+ul.listView.edge > li.listItem > div.detail > p.date > span.month{
+	display:block; 
+	margin-top: -5px; 
+	padding:0; 
+	font-size: 13px; 
+}
+ul.listView.edge > li.listItem > div.detail > p.transactionDetail{
+	color: rgba(51,46,37,1); 
+	font-size:12px; 
+	line-height:16px;
+	text-transform: uppercase;
+}
+ul.listView.edge > li.listItem > div.detail > p.amount {
+	padding-left:5px;  
+	text-align:right; 
+}
+ul.listView.edge > li.listItem > div.detail > p.amount > span {
+	color: rgba(1,124,194,1); 
+	font-size:15px; 
+	white-space: nowrap;
+}
+ul.listView.edge > li.listItem > div.detail > p.amount > span.balance{
+	display:block; 
+	color: rgba(51,46,37,1);
+	font-size: 10px;
+	font-weight: normal;
+}
+/*End list view with date*/
+
+ul.listView.noLink li div:first-child,
+ul.listView li.noLink div:first-child,
+ul.listView li.listItem div:first-child,
+ul.listView li a div:first-child, 
+ul.listView li a div.multiRow div:first-child{
+	float:left;
+}
+ul.listView.edge li a div:first-child{
+  max-width:72%;
+}
+ul.listView.noLink li div:last-child,
+ul.listView li.noLink div:last-child,
+ul.listView li.listItem div:last-child,
+ul.listView li a div:last-child, 
+ul.listView li a div.multiRow div:last-child{
+	float:right;
+	margin-right:25px;
+	text-align:right;
+}
+ul.listView.badge > li > a > div:last-child{
+/*override margin right 25px in list views*/
+	margin-right:0 !important;
+}
+/*Begin List view for safebalance*/
+ul.listView li a div.reset p.main{
+	font-weight:bold;
+	font-size:13px;	
+}
+ul.listView li a div.reset,
+ul.listView li a div.reset:last-child p{
+	color:rgba(51,46,37,1);
+	float:none;
+	text-align:left;
+}
+ul.listView li a div.checking{
+	background: url('../images/Account_Checking.png') top left no-repeat;
+	background-position: 0px 8px, top;
+	padding-left:38px;
+	width:100% !important;
+}
+ul.listView li a:active div.checking{
+	background: url('../images/Account_Checking_hit.png') top left no-repeat;
+	background-position: 0px 8px, top;
+	padding-left:38px;
+}
+ul.listView li a div.safeBal{
+	background: url('../images/Account_Safebal.png') top left no-repeat;
+	background-position: 0px 8px, top;
+	padding-left:38px;
+	width:100% !important;
+}
+ul.listView li a:active div.safeBal{
+	background: url('../images/Account_Safebal_hit.png') top left no-repeat;
+		background-position: 0px 8px, top;
+	padding-left:38px;
+}
+div.note{
+ padding-top:14px;
+ font-size:10px;
+ color:rgba(107,94,81,1);
+}
+/*//End List view for safebalance*/
+ul.listView li.noLink div.acct:last-child,
+ul.listView li.noLink div.acct:last-child p{
+	float:none;
+	margin-right:0;
+	text-align:left;
+	color:rgba(0,0,0,1);
+}
+
+ul.listView li a div:only-child{
+	float:left;
+}
+ul.listView > li.noLink > div:last-child,
+ul.listView.noLink > li  >  div:last-child{
+	margin-right:15px !important;
+}
+ul.listView.edge li div:last-child {
+	font-weight:normal;
+}
+ul.listView.edge li a div:last-child {
+	margin-top:15px;
+}
+ul.listView li.listItem{
+	padding-left:9px;
+	padding-right:9px;
+}
+ul.listView li.listItem div:last-child{
+	/*no chevron, no margin*/
+	margin:0;
+	/*listItem needs a margin-top*/
+	margin-top:15px;
+}
+ul.listView li.listItem{
+	padding-left:9px;
+	padding-right:9px;
+}
+ul.listView li.listItem div:last-child{
+	/*no chevron, no margin*/
+	margin:0;
+	/*listItem needs a margin-top*/
+	margin-top:15px;
+}
+ul.listView li.listItem.confirm div:last-child{
+	margin-top:0px;
+	margin-right:8px;
+	max-width:50%;
+}
+/*For list items with input fields*/
+ul.listView li.listItem div.right{
+	margin:0;
+}
+ul.listView li.listItem div.right input[type="text"]{
+	text-align:right;
+}
+/*Clear float and margin for div:first-child, div:last-child for multiRow*/
+ul.listView li a div.multiRow{
+	float:none;
+	margin:0 0 10px 0;
+}
+ul.listView li.listItem div.margin0:last-child,
+ul.listView li a div.multiRow:last-child{
+	margin:0;
+}
+ul.listView li a div.multiRow{
+	overflow:hidden;
+}
+ul.listView li a div.multiRow div p,
+ul.listView li a div.multiRow  div:nth-child(odd) p {
+ color: rgba(51,46,37,1);
+}
+ul.listView li a div.multiRow div:nth-child(odd) {
+	text-align:left;
+}
+ul.listView li a p.multiRow{
+	float:none;
+	margin:0 0 10px 0;
+	width:94%;
+}
+ul.listView li a p.multiRow span{
+	display:block;
+}
+ul.listView li a p.multiRow:last-child{
+	margin:0;
+}
+/*Active State for listview items that are links
+ * blue background, white text, white chevron
+ */
+ul.listView li a:active, 
+ul.listView.align li a:active,
+ul.listView.tableCell li a:active {
+	background: url("../images/chevron_hit@2x.png") right no-repeat;
+	background-color:rgba(1,124,194,1);	
+	background-size:23px 23px;
+}
+ul.listView li a:active,
+ul.listView li a:active *, 
+ul.listView.align li a:active *,
+ul.listView.tableCell li a:active *{
+	/*added important because the color is set on too many elements and override this active color.
+	  The active color should be white in any listview link
+	*/
+	color:rgba(255,255,255,1) !important;
+}
+ul.listView li a:active.degraded *{
+	color: rgba(107,94,81,1) !important;
+}
+/*//END Active State for listview items that are links*/
+/*BankAmeriDeals*/
+ul.listView li.deals a span, 
+ul.listView li.deals a span  p {
+	display: block;
+	max-width:95%;
+}
+.dealsText{
+	padding-left:70px; 
+	padding-right:7px;
+}
+/*// end BankAmeriDeals*/
+/*List views with 50 / 50 content in each column*/
+ul.listView > li > a.fiftyPercent {
+	padding-right:25px;
+}
+ul.listView  li > a.fiftyPercent > div.multiRow {
+	width:100%;
+}
+ul.listView  li > a.fiftyPercent > div.multiRow >  div:last-child > p:only-child {
+	font-weight:normal;
+	color: rgba(1,124,194,1);
+}
+ul.listView  li > a.fiftyPercent > div.multiRow  > div > p.subVal{
+	font-size:12px;
+}
+ul.listView > li > a.fiftyPercent >div.multiRow > div:first-child{
+	width:50%;
+}
+ul.listView > li > a.fiftyPercent  >div.multiRow > div:last-child{
+	width:50%;
+	margin:0 !important;
+}	
+img.deals{
+		width:64px; height:64px;
+}
+img.radioButton {
+	height:25px;
+	float:left
+	position:relative;
+	margin-top:15px;
+	margin-right:20px;
+}
+.imgWrap,
+.imgWrap.deals,
+.imgWrap.deals img{
+	max-width:100%;
+	max-height:100%;
+	height:auto !important;
+	float:left;
+}
+ul.listView li.deals div.dealsHide{
+	/*display none by default*/
+	display:none;
+}
+
+button.deals {
+	-moz-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,.10);
+	-webkit-box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,.10);
+	box-shadow:inset 0px 1px 0px 0px rgba(0,0,0,.10);
+	background-color:rgb(210,0,57); opacity: 1;
+	-webkit-border-top-left-radius:4px;
+	-moz-border-radius-topleft:4px;
+	border-top-left-radius:4px;
+	-webkit-border-top-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	border-top-right-radius:4px;
+	-webkit-border-bottom-right-radius:4px;
+	-moz-border-radius-bottomright:4px;
+	border-bottom-right-radius:4px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-bottomleft:4px;
+	border-bottom-left-radius:4px;
+	text-indent:0;
+	border:1px solid rgba(210,0,57,1);
+	display:inline-block;
+	height:30px;
+	line-height:30px;
+	width:73px;
+	text-decoration:none;
+	text-align:center;
+	font-size: 13px;
+	font-weight: bold;
+	color: rgba(255,255,255,1);
+	text-shadow: 0px 1px 0px rgba(255,255,255,.1);
+		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	outline: 0;
+}
+button.deals:active {
+	border:1px solid rgba(210,0,57,1);
+	background:rgb(161,11,62);
+
+}
+/*Styles for Listviews with Icons*/
+.singlePayment{
+	background: url('../images/bp-menu_single-pay@2x.png') center left no-repeat; 
+		-webkit-background-size:36px 26px; 
+			-moz-background-size: 36px 26px; 
+			background-size:36px 26px;  
+}
+a:active .singlePayment{
+	background: url('../images/bp-menu_single-pay@2x_hit.png') center left no-repeat; 
+		-webkit-background-size:36px 26px; 
+			-moz-background-size: 36px 26px;  
+			background-size:36px 26px; 
+}
+a:active .unpaidEbills{
+	background: url('../images/bp-menu_unpaid@2x_hit.png') center left no-repeat; 
+		-webkit-background-size:36px 26px; 
+			-moz-background-size: 36px 26px;  
+			background-size:36px 26px;   
+}
+.unpaidEbills{
+	background: url('../images/bp-menu_unpaid@2x.png') center left no-repeat; 
+		-webkit-background-size:36px 26px; 
+			-moz-background-size: 36px 26px;  
+			background-size:36px 26px; 
+}
+ul.listView li.deals div{
+	display:table-cell;
+	vertical-align:middle;
+}
+ul.listView li.deals a div div.dealsMessage{
+	text-align:left;
+}
+ul.listView li.deals div.image{
+	display:inline-block;
+	float:left;
+}
+ul.listView li.deals a div.plus {
+	background: url("../images/BaMD.png") no-repeat rgba(255,255,255,1);
+	background-position: 0 20px;
+	width: 27px;
+	height:50px;
+	margin:0;
+	padding:0;
+}
+ul.listView li.deals a div.dealsAction{
+	width:35px;	
+}
+ul.listView li.deals a div.check{
+	background: url("../images/BaMD.png") no-repeat rgba(255,255,255,1);
+	background-position: 0 -290px;
+	width: 27px;
+	height:50px;
+	margin:0;
+	padding:0;
+}
+ul.listView li.deals a div.processing{
+	background: url("../images/BaMD.png") no-repeat rgba(255, 255, 255, 1);
+	background-position: 0 -215px;
+	width: 27px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+ul.listView li.deals a div.delete{
+	background: url("../images/BaMD.png") no-repeat rgba(255, 255, 255, 1);
+	background-position: 0 -140px;
+	width: 27px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+ul.listView li.deals a div.edit{
+	background: url("../images/BaMD.png") no-repeat rgba(255, 255, 255, 1);
+	background-position: 0 -380px;
+	width: 27px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+ul.listView li.deals a div.dollar {
+	background: url("../images/BaMD.png") no-repeat rgba(255,255,255,1);
+	background-position: 0 -65px;
+	width: 27px;
+	height:50px;
+	margin:0;
+	padding:0;
+}
+ul.listView li.deals a{
+	background-image:none;
+	display:table; width:100%;	overflow: hidden; padding:10px 3px 10px 0px;
+}
+ul.listView li.deals a  div:first-child{
+	float:none;
+	/*padding-left:9px; */
+	padding-left:4px;
+	padding-right:10px;
+}
+ul.listView li.deals a  div:last-child{
+	float:none;
+	margin:0;
+	padding:0;
+}
+ul.listView li.deals a:active {
+	color:inherit;
+	background: rgba(255,255,255,1);
+}
+ul.listView li.deals a  div p{
+	color:rgba(51,46,37,1);
+	font-size:15px;
+	font-weight:bold;
+}
+ul.listView li.deals a  div p.subText{
+	color:rgba(51,46,37,1);
+	font-size:12px;
+	font-weight:normal;
+	padding-right:5px;
+}
+ul.listView li.deals a  div p.subText.black{
+	color:rgba(51,46,37,1);
+	font-size:12px;
+	font-weight:normal;
+}
+ul.listView li.deals a  div p span.greyLink {
+	display:inline;
+	text-decoration:none;
+	font-size:12px;
+	color:rgba(121,121,121,1)!important;	
+}
+ul.listView li.deals a  div p span.blueLink{
+	display:inline;
+	text-decoration:none;
+	font-size:12px;
+	color:rgba(1,124,194,1)!important;	
+}
+ul.listView li.deals a  div p span.greenLink{
+	color:rgba(45,177,91,1)!important;
+}
+ul.listView li.deals a.plus {
+	background: url("../images/add.png") center right no-repeat rgba(255,255,255,1);
+}
+ul.listView li.deals a.hide {
+	background: url("../images/hide-button_reg@2x.png") center right no-repeat rgba(255,255,255,1);
+	background-size: 75px;
+	padding-right: 40px;
+}
+ul.listView li.deals a.hideClicked {
+	background: url("../images/hide-button_hit@2x.png") center right no-repeat rgba(255,255,255,1);
+	background-size: 75px;
+	padding-right: 40px;
+}
+ul.listView li.deals a.check {
+	background: url("../images/ready.png") center right no-repeat rgba(255,255,255,1);
+}
+/*Deals accepted*/
+ul.listView.edge > li.deals > *{
+	font-size:13px;
+	font-weight:normal;
+	color:rgba(51,46,37,1);
+}
+ul.listView.edge > li.deals > div.dealsHeader {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(227,223,217,1);
+	padding: 15px 10px 15px 47px;
+}
+ul.listView.edge > li.deals > div.dealsHeader.check {
+	background: rgba(248,243,236,1) url("../images/ready.png") 10px center no-repeat;
+}
+ul.listView.edge > li.deals > div.dealsHeader.redeemed {
+	background: rgba(248,243,236,1) url("../images/redeemed.png") 10px center no-repeat;
+}
+ul.listView.edge > li.deals > div.dealsHeader.processing{
+	background: rgba(248,243,236,1) url("../images/processing.png") 10px center no-repeat;
+}
+ul.listView.edge  li.deals  a  *{
+	/*reset link text color for all states otherwise text becomes white on active*/
+	color:rgba(51,46,37,1) !important;
+}
+ul.listView.edge li.deals a div button {
+color: rgba(255,255,255,1) !important;
+}
+ul.listView.edge > li.deals > a > p {
+	padding:10px 10px 10px 46px;
+}
+ul.listView > li.deals.noLink{
+	padding:15px 10px 15px 10px;
+	border-bottom:none;
+	background:transparent;
+}
+ul.listView.edge > li.deals.accepted > a{
+	padding-top:0px;
+	padding-right:10px;
+}
+ul.listView.edge > li.deals.noLink{
+	background-image: none;
+}
+ul.listView.edge > li.deals > strong{
+	font-size:18px;
+}
+ul.listView div.sortBy {
+	background: #938671;
+	color: #ffffff;
+}
+div.dealsHeader p{
+	border-bottom: solid thin rgba(218,212,203,1);
+}
+div.dealsHeader p:last-child{
+	border-bottom: none;
+}
+div.check {
+	background-image: url("../images/ready.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:15px 10px 15px 42px;
+}
+div.processing {
+	background-image: url("../images/processing.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:15px 10px 15px 42px;
+}
+div.plus {
+	background-image: url("../images/add.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:15px 10px 15px 42px;
+}
+div.earn { 
+	background-image: url("../images/earned.png"); 
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:15px 10px 15px 42px;
+}
+ul.listView li.deals > div.expired { 
+	background-image: url("../images/expired.png"); 
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:15px 10px 15px 42px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+/*DEALS*/
+	ul.listView li.deals a div.plus {
+		background: url("../images/BaMD@2x.png") no-repeat rgba(255,255,255,1);
+		background-position: 0 20px;
+		-webkit-background-size:100%;
+			-moz-background-size:100%;
+			background-size:100%;
+	}
+	ul.listView li.deals a div.check{
+		background: url("../images/BaMD@2x.png") no-repeat rgba(255,255,255,1);
+		background-position: 0 -190px;
+			-webkit-background-size:100%;
+			-moz-background-size:100%;
+			background-size:100%;
+	}
+	ul.listView li.deals a div.processing{
+		background: url("../images/BaMD@2x.png") no-repeat rgba(255,255,255,1);
+		background-position: 0 -140px;
+			-webkit-background-size:100%;
+			-moz-background-size:100%;
+			background-size:100%;
+	}
+	ul.listView li.deals a div.edit{
+		background: url("../images/BaMD@2x.png") no-repeat rgba(255,255,255,1);
+		background-position: 0 -240px;
+			-webkit-background-size:100%;
+			-moz-background-size:100%;
+			background-size:100%;
+	}
+	ul.listView li.deals a div.dollar {
+		background: url("../images/BaMD@2x.png") no-repeat rgba(255,255,255,1);
+		background-position: 0 -35px;
+		-webkit-background-size:100%;
+			-moz-background-size:100%;
+			background-size:100%;
+	}
+	ul.listView li.deals a div.delete{
+		background: url("../images/BaMD@2x.png") no-repeat rgba(255,255,255,1);
+		background-position: 0 -90px;
+			-webkit-background-size:100%;
+			-moz-background-size:100%;
+			background-size:100%;
+	}
+	div.check {
+		background-image: url("../images/ready@2x.png");
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	div.plus {
+		background-image: url("../images/add@2x.png");
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	div.earn { 
+		background-image: url("../images/earned@2x.png"); 
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	div.processing {
+		background-image: url("../images/processing@2x.png");
+		-webkit-background-size: 27px;
+		-moz-background-size: 27px;
+		background-size: 27px;
+	}
+	ul.listView li.deals > div.expired { 
+		background-image: url("../images/expired@2x.png"); 
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	ul.listView li.deals a.plus {
+		background: url("../images/add@2x.png") right center no-repeat rgba(255,255,255,1);
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	ul.listView li.deals a.check,
+	ul.listView li.deals a.check:active {
+		background: url("../images/ready@2x.png") right center no-repeat rgba(255,255,255,1);
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	ul.listView.edge > li.deals > div.dealsHeader.check {
+		background: rgba(248,243,236,1) url("../images/ready@2x.png") 10px center no-repeat;
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	ul.listView.edge > li.deals > div.dealsHeader.redeemed {
+		background: rgba(248,243,236,1) url("../images/redeemed@2x.png") 10px center no-repeat;
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+	ul.listView.edge > li.deals > div.dealsHeader.processing {
+		background: rgba(248,243,236,1) url("../images/processing@2x.png") 10px center no-repeat;
+		-webkit-background-size:27px ;
+		-moz-background-size:27px;
+		background-size:27px;
+	}
+}
+ul.listView.edge > li.deals > p.dealOffer {
+	padding:30px 10px 0px 2px;
+	font-size:13px;
+	font-weight:normal;
+	color:rgba(51,46,37,1);
+} 
+ul.listView.edge > li.deals > p.dealOffer > a,
+ul.listView.edge > li.deals > p.dealOffer > a:active{
+	background:transparent;
+	color: rgba(1,124,194,1) !important;
+	display:inline;
+}
+ul.listView.edge > li.deals > p.dealOffer > a.toggleLink{
+		font-weight:bold;
+	text-decoration:none;
+}
+img.deals.accepted{
+	padding:5px 15px 0px 5px;
+}
+/*End of Deals accepted*/
+ul.listView li.deals a:active span p.subVal{
+	color:rgba(51,46,37,1);
+}
+/*Alert action doesn't have a "hit" or "hover" state*/
+ul.listView li.alertAction a *{
+	color:rgba(51,46,37,1)!important;
+}
+ul.listView li:first-child,
+ul.listView li:first-child a, 
+ul.listView li:first-child a:link,
+ul.listView li:first-child a:active {
+	-webkit-border-top-right-radius:8px;
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-bottom-left-radius:none;
+		-moz-border-radius-topleft:8px;
+		-moz-border-radius-topright:8px;
+			border-top-left-radius:8px;
+			border-top-right-radius:8px;
+}
+ul.listView > li:last-child,
+ul.listView  >  li:last-child  >  a, 
+ul.listView  >  li:last-child  > a:link,
+ul.listView  > li:last-child  >  a:active{
+	border-bottom:1px solid rgba(218,212,203,1);
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+		-moz-border-radius-bottomleft:8px;
+		-moz-border-radius-bottomright:8px;
+			border-bottom-left-radius:8px;
+			border-bottom-right-radius:8px;
+}
+/*BAC Touch edge-to-edge List View*/
+ul.listView.edge{
+	margin:0;
+}
+ul.listView.edge li{
+	border-top:1px solid rgba(218,212,203,1);
+	border-left:0;
+	border-right:0;
+	-webkit-border-radius:0;
+		border-radius:0;
+}
+ul.listView li:last-child{
+	border-bottom:0px;
+}
+ul.listView.edge li:first-child,
+ul.listView.edge li:first-child a, 
+ul.listView.edge li:first-child a:link,
+ul.listView.edge li:first-child a:active{
+	-webkit-border-radius:0;
+		-moz-border-radius:0;
+			border-radius:0;
+}
+ul.listView.edge li:last-child,
+ul.listView.edge li:last-child a, 
+ul.listView.edge li:last-child a:link,
+ul.listView.edge li:last-child a:active{
+	-webkit-border-radius:0;
+		-moz-border-radius:0;
+			border-radius:0;
+}
+/*List view line items with picklist checkmark image*/
+ul.listView li.pickListCheck a,
+ul.listView.pickListAll li a,
+ul.listView.edge li.pickListCheck a,
+ul.listView li.pickListCheck{
+	background: url("../images/picklistcheck_on@2x.png") center right no-repeat;
+	background-color:rgba(255,255,255,1);
+	background-size:23px 23px;
+}
+ul.listView li.pickListCheck a:active,
+ul.listView.edge li.pickListCheck a:active{
+	background: url("../images/picklistcheck_hit@2x.png") center right no-repeat;
+	background-color:rgba(1,124,194,1);
+	color:rgba(255,255,255,1);
+	background-size:23px 23px;
+}
+ul.listView.edge li.alertAction a p:first-child{
+	color:rgba(51,46,37,1);
+	font-weight:bold;
+	font-size:15px;
+}
+/*List view line items with no chevron*/
+ul.listView li.listItem,
+ul.listView li.noChevron a,
+ul.listView.noChevronAll li a,
+ul.listView.edge li.noChevron a{
+	background:none;
+	background-color:rgba(255,255,255,1);
+}
+ul.listView li.alertAction a{
+	background: url("../images/alert_action@2x.png") center right no-repeat;
+	background-color:rgba(235,245,250,1);
+	padding-right:25px;
+	background-size:23px 23px;
+}
+ul.listView li.alertAction a p.subVal span{
+	color:rgba(51,46,37,1);
+}
+ul.listView li.deals a p.subText span.linkBlueText,
+ul.listView li.alertAction a p.subVal span.linkBlueText,
+ul.listView li.deals a span p.subVal span.linkBlueText{
+	display:inline-block;
+	color: rgba(1,124,194,1)!important;
+}
+ul.listView li.deals a p.subText span.linkGreenText,
+ul.listView li.deals a span p.subVal span.linkGreenText{
+	display:inline-block;
+	color: rgba(45,177,91,1)!important;
+}
+ul.listView li.noChevron a:active,
+ul.listView.noChevronAll li a:active,
+ul.listView.edge li.noChevron a:active{
+	background:none;
+	background-color:rgba(1,124,194,1);
+	color:rgba(255,255,255,1);
+}
+/*Right content needs to align with chevron
+*Only needed when there is lopsided content on left and right. 
+*Two rows on left, one on right
+*/
+ul.listView li a div p.marginTop8px{
+	margin-top:8px;
+}
+/*Badge for slidemenu and for list views*/
+ul.listView li a div p.grayText{
+	color: rgba(201,194,184,1);
+}
+p.badge{
+	 height: 26px;
+	 line-height: 26px; /*vertically centers the number*/
+	width: 36px;
+	background: rgba(201,194,184,1);
+	-webkit-border-radius: 18px/20px;
+	-moz-border-radius: 18px/20px;
+	border-radius: 18px/20px;
+	color: rgba(255,255,255,1)!important;
+	font-size: 14px;
+	text-align: center;
+}
+
+p.badge.blue{
+	color: rgba(255,255,255,1) !important;
+	background:rgba(1,124,194,1);
+}
+
+
+ul.listView li a:active div p.badge{
+	background:rgba(255,255,255,1) !important;
+	color:rgba(1,124,194,1) !important;
+}
+
+.paddingLeft40{
+	padding-left:40px;
+}
+
+ul.listView li.listItem.loading{
+	text-align:center;
+	line-height:22px;
+}
+ul.listView li.listItem.loading p{
+	background: url("../images/loadingLarge.gif") left no-repeat;
+	background-size:22px 22px;
+		-webkit-background-size:22px 22px;
+			-moz-background-size:22px 22px;
+	display:inline-block;
+}
+ul.listView li.listItem.loading p span{
+	padding-left:30px;
+	font-size:15px;
+	font-weight:normal;
+	color:rgba(149,144,136,1);
+}
+/*
+ *Styles for list views with multiple lines so that the arrows align with the column.
+ *Multi-row content affects the line-height and the arrow is vertically aligned center depending on line-height.
+ *If the right side has two columns, and the left-side has only one, then the left-side needs to have a line-height of 54px.
+ *If the right side has three columns, and the left-side has only one, then the left-side needs to have a line-height of 64px and so on. 10px per line.
+ *The design doesn't really accomodate this type of unperdictable content. It was originally intended for one line and not so many characters.
+ *There are also no visual specs provided for the variations but we keep getting defects on this so I'm doing what I can to close them out. -Marina
+*/
+
+/*List view's normally have a padding. I have to strip that out for multi-lines*/
+ul.listView.noLink li.multiLine,
+ul.listView a.multiLine {
+	padding: 0;
+}
+/*Use this when the left column is centered with arrow and right column has two lines*/
+ul.listView.noLink li.multiLine div.multiLineLeftPad,
+ul.listView a.multiLine  div.multiLineLeftPad {
+	padding: 0 0 0 6px;
+}
+ul.listView.noLink li.multiLine  div.multiLinePad,
+ul.listView a.multiLine  div.multiLinePad {
+	padding: 12px 0 12px 6px;
+}
+/*line-height variations*/
+/*when second row is a subval*/
+ul.listView.noLink  div.twoRowsSubval,
+ul.listView a.multiLine  div.twoRowsSubval{
+	line-height:36px;
+}
+
+ul.listView.noLink  div.twoRows,
+ul.listView a.multiLine  div.twoRows{
+	line-height:58px;
+}
+ul.listView.noLink  div.threeRows,
+ul.listView a.multiLine  div.threeRows{
+	line-height:64px;
+}
+/*max-width variations*/
+ul.listView.noLink div.maxWidth45,
+ul.listView a div.maxWidth45,
+ul.listView a.multiLine  div.maxWidth45 { 
+	max-width:45%;
+}
+ul.listView.noLink  div.maxWidth55,
+ul.listView a  div.maxWidth55,
+ul.listView a.multiLine  div.maxWidth55 { 
+	max-width:55%;
+}
+ul.listView.noLink div.maxWidth62,
+ul.listView a div.maxWidth62,
+ul.listView a.multiLine  div.maxWidth62 {
+	
+	max-width:62%;
+}
+ul.listView.noLink  div p.ellipsis,
+ul.listView a  div p.ellipsis,
+ul.listView a.multiLine  div p.ellipsis{
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+ul.listView a.multiLine div.payMessage p.amount{
+	margin-top:22px;
+}
+ul.listView a.multiLine div.payMessage{
+	position:relative;
+}
+ul.listView a.multiLine div.payMessage  p.message{
+	position:absolute; 
+	top:30px; 
+	right:60px;
+	display:inline-block; 
+	max-width:140px; 
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*Line-height Formatting for listviews that have different last-minute UX requirements*/
+/*Line height for listviews with icons and text, Example, Bill Pay*/
+.lineheight26{
+	line-height:26px;
+}
+.lineheight16 {
+	line-height: 16px;
+}
+
+.marginLeft50{
+	margin-left:50px;
+}
+ul.listView.edge li.listItem.gridTable{
+	padding:8px 0px 8px 4px;
+}
+ul.listView.edge li a div.marginRight8px {
+	margin-right:8px;
+}
+ul.listView.edge li a div.maxWidth50{
+	max-width:50%;
+}
+ul.listViewPlain {
+	margin:0 9px 9px 9px;
+	list-style: none;
+	background: transparent;
+}
+ul.listViewPlain li.listItemPlain{
+	display:block;
+	text-decoration:none;
+	color:rgba(51,46,37,1);
+	font-weight:bold;
+	font-size:15px;
+	background:none;
+	border-color:rgba(218,212,203,1);
+	border-style:solid;
+	border-top:1px solid rgba(218,212,203,1);
+	border-left:1px solid rgba(218,212,203,1);
+	border-right:1px solid rgba(218,212,203,1);
+	background-color:rgba(255,255,255,1);
+	padding:12px 0 12px 12px;
+	overflow:hidden;
+}
+ul.listViewPlain li.listItemPlain:first-child{
+	-webkit-border-top-right-radius:8px;
+	-webkit-border-top-left-radius:8px;
+	-webkit-border-bottom-left-radius:none;
+	-moz-border-radius-topleft:8px;
+	-moz-border-radius-topright:8px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+}
+ul.listViewPlain li.listItemPlain:last-child{
+	border-bottom:1px solid rgba(218,212,203,1);
+	-webkit-border-bottom-right-radius:8px;
+	-webkit-border-bottom-left-radius:8px;
+	-moz-border-radius-bottomleft:8px;
+	-moz-border-radius-bottomright:8px;
+	border-bottom-left-radius:8px;
+	border-bottom-right-radius:8px;
+}
+/*list view with no border/no background*/
+ul.listView.noBorder{
+margin: -10px 9px 0px 9px;
+}
+ul.listView > li.noBorder,
+ul.listView > li:only-child.noBorder
+ {
+border:none;
+}
+ul.listView > li.noBkgd {
+background:transparent;
+}
+/*List view with vertical alignment*/
+ul.listView.align,
+ul.listView.tableCell {
+	list-style: none;
+	background: transparent;
+}	
+ul.listView.align > li:last-child,
+ul.listView.tableCell > li:last-child {
+	border-bottom:1px solid rgba(218,212,203,1);
+}
+ul.listView.align > li:last-child > a,
+ul.listView.tableCell > li:last-child > a {
+	border-bottom:0px;
+}
+ul.listView.align > li > a,
+ul.listView.tableCell > li > a,
+ul.listView.align > li.align {
+	display:table; 
+	width:100%; 
+	text-decoration: none;
+	padding:12px 25px 12px 6px;
+	overflow: hidden;
+}
+ul.listView.align > li > a > div.row,
+ul.listView.align > li.align > div.row{
+	display:table; 
+	width:100%; 
+	overflow:hidden;
+	padding:6px 0 0 0; 
+	padding-left:0 !important;
+	margin:0;
+
+}
+ul.listView.align > li > a div.row div,
+ul.listView.align > li.align div.row div{
+	display:table-cell;
+	width:50%;
+	float:none;
+	padding:0;
+	margin:0; 
+}
+ul.listView.align > li > a div.row  > div:first-child,
+ul.listView.align > li > a div.row  > div:only-child,
+ul.listView.align > li.align > div.row > div:first-child,
+ul.listView.align > li.align > div.row > div:only-child *{
+	text-align:left;
+}
+ul.listView.align > li > a > div.row > div:last-child,
+ul.listView.align > li.align > div.row > div:last-child{
+	text-align:right;
+}
+ul.listView.align > li > a,
+ul.listView.tableCell > li > a,
+ul.listView.edge.align > li > a,
+ul.listView.align > li.align{
+		padding:10px 25px 10px 10px;
+}
+ul.listView.align.noChevron > li > a,
+ul.listView.edge.align.noChevron > li > a,
+ul.listView.align > li.align{
+	background-image:none;
+		padding:10px;
+}
+ul.listView.align.noChevron > li > a div p,
+ul.listView.edge.align > li > a div p,
+ul.listView.edge.align.noChevron > li > a div p{
+	padding:0;
+	
+}
+ul.listView.edge.align > li > a{
+		padding:10px 25px 10px 10px;
+}
+ul.listView.edge.align.noChevron > li > a{
+	background-image:none;
+		padding:10px;
+}
+ul.listView.edge.align > li > a div p,
+ul.listView.edge.align.noChevron > li > a div p{
+	padding:0;
+	
+}
+
+ul.listView.edge.align.noChevron > li > a.cardReplace{
+	padding:10px 10px 10px 0;
+}
+ul.listView.edge.align.noChevron > li > a.cardReplace div{
+	padding:0 0 0 4px;
+	margin:0;
+}
+ul.listView.edge.align.noChevron > li > a span.checkmark{
+	background: url("../images/check_circle.png") center left no-repeat;
+	display:table-cell;
+	vertical-align: middle;
+	overflow:hidden;
+	height:33px;
+	width:39px;		
+}
+ul.listView.edge.align.noChevron > li > a span.checkmark_on{
+	background: url("../images/check_on@2x.png") center left no-repeat;
+	display:table-cell;
+	vertical-align: middle;
+	overflow:hidden;
+	height:30px;
+	width:36px;	
+	background-size: 30px 30px;
+}
+ul.listView.edge > li.deals > a >  div > div.imgWrap.left > div.checkmark_on{
+	background: url("../images/check_on@2x.png") center left no-repeat;
+	display:table-cell;
+	vertical-align: middle;
+	overflow:hidden;
+	height:30px;
+	width:36px;		
+	padding-right:30px;
+	background-size: 30px 30px;
+}
+
+ul.listView.edge.align.noChevron > li > a span.checkmark_off{
+	background: url("../images/check_off@2x.png") center left no-repeat;
+	display:table-cell;
+	vertical-align: middle;
+	overflow:hidden;
+	height:30px;
+	width:36px;		
+	background-size: 30px 30px;
+
+}
+ul.listView.edge > li.deals > a >  div > div.imgWrap.left > div.checkmark_off{
+	background: url("../images/check_off@2x.png") center left no-repeat;
+	display:table-cell;
+	vertical-align: middle;
+	overflow:hidden;
+	height:30px;
+	width:36px;		
+	padding-right:30px;
+	background-size: 30px 30px;
+
+}
+ul.listView.edge.align.noChevron > li > a div span.ccImage{
+	display: table-cell;
+	vertical-align: middle;	
+}
+ul.listView.edge.align.noChevron > li > a div span.ccMessage{
+	display: table-cell;
+	vertical-align: middle; 
+	text-align:left; 
+	padding-left:10px;
+}
+ul.listView.align  > li > a.chevron16px{
+	background: url("../images/chevron16px_lightblue.png") center right no-repeat;
+	background-color:rgba(235,246,253,1);
+	padding:12px 35px 12px 6px;
+	overflow:hidden;
+}
+ul.listView.align  > li > a:active.chevron16px{
+	background: url("../images/chevron16px_hit.png") center right no-repeat;
+	background-color:rgba(1,124,194,1);
+	padding:12px 35px 12px 6px;
+	overflow:hidden;
+}
+ul.listView.align > li > a,
+ul.listView.tableCell > li > a {
+	min-height:44px;
+}
+ul.listView.align > li > a > div,
+ul.listView.align > li.align > div{
+	float:none;
+	margin:0;
+	display:table-cell; 
+	width:50%;
+	vertical-align:middle;
+}
+ul.listView.tableCell > li > a > div{
+	float:none;
+	margin:0;
+	display:table-cell; 
+	vertical-align:middle;
+}
+/*last compared up to here*/
+ul.listView.align > li > a > div:last-child{
+	text-align:right;
+}
+
+ul.listView.align > li > a > div{
+	color: rgba(51,46,37,1);
+	font-weight: bold;
+	font-size: 15px;  
+}
+ul.listView.align > li > a > div.tr_section2{
+	float:none;
+	margin:0;
+	display:table-cell; 
+	width:90%;
+	vertical-align:middle;
+}
+ul.listView.align > li > a > div.tr_section3{
+	float:none;
+	margin:0;
+	display:table-cell; 
+	width:10%;
+	vertical-align:middle;
+}
+.accountCheckImage,
+ul.listView.edge.align.noChevron > li > a div p.accountCheckImage  {
+	background: url("../images/check-icon@2x.png") no-repeat top left;
+	padding-left: 35px;
+	padding-right:5px;
+	background-size:32px 15px;
+}
+ul.listView  div.badge {
+/*override margin right 25px in list views*/
+	margin-right:0 !important;
+	float:right!important; 
+	display:inline-block!important;
+	width:46px !important; 
+}
+ul.listView li a div.multiRow{
+	display:inline-block!important;
+}
+ul.listView li a div.multiRow.hidden{
+	display:none!important; 
+}
+li.checkBox a div span.checkBox{
+	float:left;
+	background: url('../images/multi@2x.png') top left no-repeat;  
+	overflow:hidden;
+	height: 35px;
+	width: auto;
+	background-size: 35px 155px;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+li.checkBox a div span.checkBox.multi_check,
+fieldset.checkBox div.multi_check{ 
+	background-position: 0 0; 
+} 
+li.checkBox a div span.checkBox.multi_delete,
+fieldset.checkBox div.multi_delete{ 
+	background-position: 0 -60px;  
+} 
+li.checkBox a div span.checkBox.multi_off{ 
+	background-position: 0 -120px; 
+} 
+li.checkBox a.checkBox {
+	float:left;
+	background: url('../images/multi@2x.png') top left no-repeat;  
+	overflow:hidden;
+	height: 35px;
+	width: 100%;
+	background-size: 35px 155px;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+li.checkBox a.checkBox.multi_check {
+	background-position: 0 0;
+} 
+li.checkBox a.checkBox.multi_delete { 
+	background-position: 0 -60px;  
+} 
+li.checkBox a.checkBox.multi_off {
+	background-position: 0 -120px;
+} 
+/*Legacy checkbox styles*/
+ul.listView.align > li.checkBox > a{
+	padding-left:6px;
+}
+ul.listView li div.radioDiv{
+	display: table;
+	width: 100%;
+	background-color: rgba(255,255,255,1);
+	min-height: 44px;
+	padding: 10px;
+}
+ul.listView li div.radioDiv div,
+ul.listView li div.radioDiv a{
+	display: table-cell;
+	vertical-align: middle;
+}
+ul.listView li div.radioDiv img{
+	padding-right: 5px;
+}
+ul.listView li div.radioDiv div.radioText {
+	width: 100%;
+	font-weight: bold;
+	word-break: break-all;
+}
+ul.listView li div.radioDiv a.radioLink {
+	text-align: right;
+	color: rgba(1,124,194,1);
+	padding-left: 5px;
+	text-decoration: none;
+}
+ul.listView li div.radioDiv div.inputContainer{
+	width: 100%;
+}
+ul.listView.align > li.checkBox > a > div {
+	width:auto;
+}
+/*End of List View Menu and Lists and Tables*/
+h2.listView	{
+	font-size:12px;
+	color:rgba(107,94,81,1);
+	font-weight:bold;
+	text-shadow:0px 1px 0px rgba(255,255,255,1);
+	margin:14px 0 5px 18px;
+}
+/*BUTTONS*/
+.btnListView {
+	display:table-cell;	
+	vertical-align: middle;
+    color: rgba(255,255,255,1);      
+	-moz-border-radius: 8px;     
+		-webkit-border-radius: 8px;    
+			border-radius: 8px;     
+	background:#016FC0; /*for IE < 9*/
+	background-image: -moz-linear-gradient(top, rgba(1,124,194,1), rgba(1,111,174,1));     
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(1,124,194,1)), color-stop(1, rgba(1,111,174,1)) );     
+	background-image: -ms-linear-gradient(top, rgba(1,124,194,1), rgba(1,111,174,1));     
+	 -webkit-box-shadow: inset 0 1px 0 rgba(0, 74, 145, .60);
+      -moz-box-shadow: inset 0 1px 0 rgba(0, 74, 145, .60);
+           box-shadow: inset 0 1px 0 rgba(0, 74, 145, .60);  
+	overflow: hidden;    
+	min-height:20px;
+	margin: 0px -2px;
+	padding:0px 12px;
+	font-size:11px;
+	font-weight:bold;
+	line-height:28px;
+	text-decoration: none;     
+	text-align: center; 
+	color: rgba(255,255,255,1);      
+	-moz-border-radius: 6px;     
+	-webkit-border-radius: 6px;    
+	border-radius: 6px;     
+	background-color:#9C9690;
+	overflow: hidden;     
+	border:1px solid #ccc;
+}
+.btnListView:active {
+	background:#013F83; /*for IE < 9*/
+    background-color: rgba(1,63,131,1);
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(1,63,131,1)), to(rgba(0,74,145,1)));
+    background-image: -webkit-linear-gradient(rgba(1,63,131,1), rgba(0,74,145,1));
+    background-image: -moz-linear-gradient(rgba(1,63,131,1), rgba(0,74,145,1));
+    background-image: -ms-linear-gradient(rgba(1,63,131,1), rgba(0,74,145,1));
+    background-image: linear-gradient(rgba(1,63,131,1), rgba(0,74,145,1));
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 50, 98, 1);
+      -moz-box-shadow: inset 0 1px 0 rgba(0, 50, 98, 1);
+           box-shadow: inset 0 1px 0 rgba(0, 50, 98, 1);
+}
+/*Formatting*/
+p.breakText{
+	float:right;
+	width:160px;
+	word-wrap: break-word;
+	overflow:hidden;
+}
+p.breakText.left{
+		float:left;
+}
+.displayTable{
+	display:table;	
+}
+.verticalAlign{
+	display:table-cell; 
+	vertical-align:middle;
+}
+.verticalAlignTop{
+	display:table-cell; 
+	vertical-align:top;
+}
+.paddingHoriz5 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.bottompad0{
+	padding-bottom:0px !important;
+}
+div.toggleContainer  >  div.left  > p,
+div.toggleContainer.listView >  div.left  > p{
+	padding-left:10px;
+	line-height:44px;
+}	
+.toggleContainer.listView{
+	line-height:44px;
+	border:none;
+	margin:0px;
+	background-color:white;
+	overflow:hidden;
+}
+/*Table Grid*/
+table.gridtable {
+	width:100%;
+	table-layout:fixed;
+	word-wrap:break-word;
+	background-color:rgba(255,255,255,1);
+	font-size:13px;
+	color: rgba(0,0,0,1);
+	border-width: 1px;
+	border-color: rgba(147,134,113,.50);
+	border-collapse: collapse;
+	padding-left:9px;
+	padding-right:9px;
+}
+
+table.gridtable th {
+	background:rgba(249,247,244,1);
+	border-width: 1px;
+	padding: 8px;
+	text-align:left;
+	border-style: solid;
+	border-color: rgba(218,212,203,1);
+	border-right:0;
+	border-left:0;
+}
+table.gridtable th:last-child{
+	text-align:right;
+}
+table.gridtable tr:first-child >td {
+	border-width: 2px;
+	border-color: rgba(216,212,206,1);
+	border-style: solid;
+	border-right:0;
+	border-left:0;
+	border-bottom:0;
+}
+table.gridtable.noFirstBorder tr:first-child >td {
+	border-width: 0px;
+	padding-top:0;
+}
+table.gridtable.noLastBorder tr:last-child >td {
+	border-width: 0px;
+	padding-bottom:0px;
+}
+table.gridtable tr td:first-child{
+	padding-right:20px;
+}
+table.gridtable td, table.gridtable tr:only-child td {
+	padding: 10px 0 10px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(238,236,233,1);
+	background:rgba(249,247,244,1);
+	border-right:0;
+	border-left:0;
+	font-size:13px;
+}
+table.gridtable.oneRow tr td{
+	border:0 !important;
+	padding:10px;
+}
+table.gridtable tr:only-child td{
+	border-top:2px solid  rgba(238,236,233,1);
+}
+table.gridtable  td  p.subVal{
+	font-size:11px;
+	color: rgba(44,39,30,1);
+	font-weight:normal;
+}
+table.gridtable td.noBtmBorder {
+	border:none !important;
+}
+table.gridtable tr td.noBottomBorder {
+	border-bottom:0;
+	padding: 10px 0 0 0;
+}
+table.gridtable tr td.noTopBorder {
+	border-top:0;
+	padding: 0 0 10px 0;
+}
+table.gridtable td:first-child{
+	color:rgba(107,94,81,1);
+}
+table.gridtable td:last-child{
+	text-align:right;
+	font-weight:bold;
+	color:rgba(44,39,30,1);
+}
+table.gridtable td:only-child{
+	text-align:left;
+	font-weight:normal;
+	color:rgba(44,39,30,1);
+}
+table.gridtable.noBorder th,
+table.gridtable.noBorder td {
+	font-size:15px;
+	padding-top:2px;
+	padding-left:2px;
+	border:none;
+	text-align:right;
+}
+table.gridtable.noBorder td:first-child{
+	padding-right:20px;
+}
+table.gridtable.noBorder td:last-child{
+	color:rgba(1,124,194,1);
+	font-weight:normal;
+}
+table.gridtable.noBorder th{
+	text-align:left;
+	padding:0;
+}
+.no-list-style li {
+list-style-type: none;
+}
+table.dataTable {
+	width:100%;
+	word-wrap:break-word;
+	background:none;
+	font-size:11px;
+	color: rgba(51,46,37,1);
+}
+table.dataTable tr td{
+	padding-top:10px;
+}
+table.dataTable tr:first-child td{
+	padding-top:0px;
+}
+table.dataTable td:last-child,
+table.dataTable th:last-child{
+	text-align:right;
+}
+hr.gray{
+	border-top:2px solid rgba(218,212,203,1);
+}
+/*GRID*/
+div.grid{
+	display:table;
+	width:100%;
+	word-wrap:break-word;
+	font-size:13px;
+	color: rgba(0,0,0,1);
+	border-width: 1px;
+	border-color: rgba(147,134,113,.50);
+	border-collapse: collapse;
+	padding-left:9px;
+	padding-right:9px;
+}
+
+div.grid div.row:first-child{
+	border-width: 2px;
+}
+div.grid div.row{
+	display:table-row;
+	border-top: 1px solid rgba(216,212,206,1);
+}
+div.grid div.row:last-child,
+div.grid div.row.inside:last-child{
+	border-bottom: 1px solid rgba(216,212,206,1);
+}
+div.grid div.row div {
+	display:table-cell;
+	vertical-alignment:middle;
+	padding: 10px 9px 10px 9px;
+}
+div.grid div.row.inside div {
+	display:table-cell;
+	vertical-alignment:middle;
+	padding: 0px 9px 10px 9px;
+}
+div.grid div.row.inside {
+	border:0;
+}
+div.grid div.row.inside:only-child{
+	border-bottom: 1px solid rgba(216,212,206,1);
+}
+div.grid div.row div.txtAlignRt,
+div.grid div.row.inside div.txtAlignRt {
+	text-align:right;
+}
+/*Legacy Table Grid*/
+/*Table Grid*/
+table.gridtable {
+	width:100%;
+	table-layout: auto;
+	word-wrap:break-word;
+	background-color:rgba(255,255,255,1);
+	font-size:13px;
+	color: rgba(0,0,0,1);
+	border-width: 1px;
+	border-color: rgba(147,134,113,.50);
+	border-collapse: collapse;
+	padding-left:9px;
+	padding-right:9px;
+}
+
+table.gridtable th {
+	background:rgba(249,247,244,1);
+	border-width: 1px;
+	padding: 10px 0;
+	text-align:left;
+	border-style: solid;
+	border-color: rgba(238,236,233,1);
+	border-right:0;
+	border-left:0;
+}
+table.gridtable td.multiRowTop{
+	padding:0;
+	padding-top:10px;
+	border:none;
+	border-top:1px solid rgba(238,236,233,1);
+}
+table.gridtable td.multiRowBottom{
+	padding:0;
+	padding-bottom:10px;
+	border:none;
+	border-bottom:1px solid rgba(238,236,233,1);
+}
+/*End of Legacy Table Grid*/
+@media only screen and (orientation: landscape) {
+  /* rules for landscape orientation */
+	ul.listView a.multiLine div.payMessage  p.message{
+		position:absolute; 
+		top:30px; 
+		right:100px;
+		display:inline-block; 
+		max-width:240px; 
+		overflow: hidden; 
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+}
+
+div.bofaBannerLink {
+  /*background-image: url("../images/sab_icon_sm.png");*/
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 10px 10px 10px 33px;
+}
+.bofaBanner>div{
+  padding-left: 10px;	
+}
+.bofaBanner .crossbutton {
+  /*background: url('../images/sab_close.png') center left no-repeat;*/
+  overflow: hidden;
+  height: 30px;
+  padding-right: 20px;  
+}
+.bofaBanner {
+  background-image: none;
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  padding: 8px 3px 8px 0px;
+  border-top: 1px solid #D1C9C0;
+  border-bottom: 1px solid #D1C9C0;
+  background-color: #F9F7F4;
+}
+.bofaBanner .bofaBannerMessage {
+  vertical-align: middle;
+}
+.bofaBanner .verticalImg {
+  padding-right: 10px;
+}
+.bofaBanner .verticalImg img {
+    width: 64px;
+    height: 64px;
+}
+.borderLine { border-bottom: 1px solid #D1C9C0;}
+.bofaBanner p.header { 
+	color:#1212FE;
+	font-size: 18px;
+     	font-weight: bold;
+}
+.bofaBanner p.subText {
+  font-size: 16px;
+  font-weight: normal;
+  padding-right: 5px;
+}
+
+.bofaBanner div {   
+	display: table-cell;
+    vertical-align: middle;
+}

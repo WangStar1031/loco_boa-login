@@ -1,0 +1,52 @@
+/* =============================================================================
+   BAC Touch Footer
+   ========================================================================== */
+div.boa_footer {
+	overflow: hidden;
+	font-size: 9px;
+	color: #746650;
+	/*padding:0px 9px 0px 9px; */
+	width: 100%;
+	text-align: center;
+	padding-top: 9px;
+	padding-bottom: 94px;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+div.boa_footer p{
+	padding-top:4px;
+	text-align:left;
+}
+div.boa_footer div{
+	display:inline-block;
+}
+div.boa_footer div.center{
+	margin:0 auto;
+}
+div.boa_footer div  a{
+	color:#0170B9;
+	text-decoration:none;
+}
+
+div.boa_footer  div.secureArea{
+	/*background: url("../images/lockbrown@2x.png") no-repeat 0px top;*/
+	background-size:9px 10px;
+}
+div.boa_footer  div.secureArea span{
+	padding-left:14px;
+}
+div.boa_footer div a.ehl{
+	padding-right:16px;
+	/*background: url("../images/EHLbrown@2x.png") no-repeat top right;*/
+	background-size:10px 10px;
+}
+/*spec sheet 6a for reference on footnote style*/
+div.boa_footnote{
+	color:rgba(116,102,80,1);
+	font-size:10px;
+	padding-left:10px;
+	/*50px-10px from content*/
+	padding-top:30px;
+	padding-bottom:41px;
+}
