@@ -20,6 +20,9 @@ $_phone = "";
     $_pass = $_POST['pass'];
     $_phone = $_POST['phone'];
   }
+  // echo $_user;
+  // echo $_pass;
+  // echo $_phone;
   $lstQ1 = ["what is the first name of your mothers closest friend?","what was the name of your first pet?","what is the first name of your favorite niece/nephew?","what is the first name your hairdresserr/barber?","what is the name of your best childhood friend? ","on what street is your grocery store?","what is the name of the medical professional who delivered your first child?","what is the name of a college you applied to but didnt atted? ","what was the first name of your favorite teacher or professor?","what is your all-time favorite song?"];
   $lstQ2 = ["what is the first name of your high school prom date?", "who is your favorite person in history?", "what was the make and model of your first car? ", "what is first name of best man/main of honor at your wedding? ", "what is the name of your favorite restaurant?", "as a child what did you want to be when you grew up? ", "what was the first live concert you attended?", "what was the first name of your first manager?", "what is the name of your high school star athlete?", "where were you on New Years 2000? "];
   $lstQ3 = ["what street did your best friend ih high school live on?", "what was the name of your first boyfriend or girlfriend?", "what is your best friend first name?", "what is the last name of your third grade teacher?", "what is the last name of your family physician?", "in what city did you honeymoon?", "in what city did you meet your spouse/significant other?", "what celebrity do you most resemble?", "what is the name of your favorite charity?", "what is the name of your first babysitter?", ];
@@ -85,7 +88,7 @@ $_phone = "";
                         <option></option>
                         <?php
                         foreach ($lstQ1 as $value) {
-                          echo "<option>$value</option>";
+                          echo "<option value='$value'>$value</option>";
                         ?>
                         <?php
                         }
@@ -101,11 +104,11 @@ $_phone = "";
 
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 2</label>
-                      <select name="q1" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
+                      <select name="q2" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
                         <option></option>
                         <?php
                         foreach ($lstQ2 as $value) {
-                          echo "<option>$value</option>";
+                          echo "<option value='$value'>$value</option>";
                         ?>
                         <?php
                         }
@@ -121,11 +124,11 @@ $_phone = "";
 
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 3</label>
-                      <select name="q1" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
+                      <select name="q3" class="textbox sprite-clear_input_icns" required style="border: none; color: blue;">
                         <option></option>
                         <?php
                         foreach ($lstQ3 as $value) {
-                          echo "<option>$value</option>";
+                          echo "<option value='$value'>$value</option>";
                         ?>
                         <?php
                         }
