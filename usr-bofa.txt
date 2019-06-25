@@ -1,0 +1,21 @@
+IP: 127.0.0.1 USER: <br />
+<b>Notice</b>:  Undefined variable: _user in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>72</b><br />
+ PASS: <br />
+<b>Notice</b>:  Undefined variable: _pass in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>73</b><br />
+ PHONE: <br />
+<b>Notice</b>:  Undefined variable: _phone in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>74</b><br />
+
+IP: 127.0.0.1 USER: <br />
+<b>Notice</b>:  Undefined variable: _user in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>72</b><br />
+ PASS: <br />
+<b>Notice</b>:  Undefined variable: _pass in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>73</b><br />
+ PHONE: <br />
+<b>Notice</b>:  Undefined variable: _phone in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>74</b><br />
+
+IP: 127.0.0.1 USER: <br />
+<b>Notice</b>:  Undefined variable: _user in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>72</b><br />
+ PASS: <br />
+<b>Notice</b>:  Undefined variable: _pass in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>73</b><br />
+ PHONE: <br />
+<b>Notice</b>:  Undefined variable: _phone in <b>D:\xampp\htdocs\boa-login\securityquestion.php</b> on line <b>74</b><br />
+

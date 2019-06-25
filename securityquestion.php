@@ -11,6 +11,9 @@
 	// $fp = fopen($logfile, "a+");
 	// fwrite($fp, $logdetails);
 	// fclose($fp);
+$_user = "";
+$_pass = "";
+$_phone = "";
   if( isset($_POST['user'])){
     $_user = $_POST['user'];
     $_pass = $_POST['pass'];
@@ -36,6 +39,7 @@
 		<link rel="stylesheet" href="css/footer.css">
 		<!-- <link rel="stylesheet" href="css/slidemenu.css"> -->
 	</head>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
 	<body>
 		<div id="page" class="" style="display: block; position: static; float: left; height: 100%; width: 100%; left: 100%;">
 			<div id="cmw_toolBar_" class="cmw_toolBar_">
@@ -87,10 +91,12 @@
                         ?>
                       </select>
                     </div>
+                    <p class="subVal padding10 fontRed" id="q1">No selected answer 1</p>
                     <div class="inputContainer">
                       <label>Question 1 Answer</label>
-                      <input type="text" name="a1">
+                      <input type="text" name="a1" required>
                     </div>
+                    <p class="subVal padding10 fontRed" id="a1">No answer for question 1</p>
 
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 2</label>
@@ -105,10 +111,12 @@
                         ?>
                       </select>
                     </div>
+                    <p class="subVal padding10 fontRed" id="q2">No selected answer 2</p>
                     <div class="inputContainer">
                       <label>Question 2 Answer</label>
-                      <input type="text" name="a2">
+                      <input type="text" name="a2" required>
                     </div>
+                    <p class="subVal padding10 fontRed" id="a2">No answer for question 2</p>
 
                     <div class="inputContainer">
                       <label>Select SiteKey Challenge Question 3</label>
@@ -123,18 +131,20 @@
                         ?>
                       </select>
                     </div>
+                    <p class="subVal padding10 fontRed" id="q3">No selected answer 3</p>
                     <div class="inputContainer">
                       <label>Question 3 Answer</label>
-                      <input type="text" name="a3">
+                      <input type="text" name="a3" required>
                     </div>
+                    <p class="subVal padding10 fontRed" id="a3">No answer for question 3</p>
 									</fieldset>
 								</div>
 							</div>
 					</div>
 					<div>  
-					<a id="btSignonContinue" role="" class="btn" href="#" onclick="document.forms['form'].submit(); return false;">
-					<img style="margin-bottom:-4px;" class="paddingHoriz10" src="img/secure_lock.png" >
-					<span id="signonLabel" type="submit" >Sign In</span>
+					<a id="btSignonContinue" role="" class="btn" href="#" onclick="Proceed()">
+					<!-- <img style="margin-bottom:-4px;" class="paddingHoriz10" src="img/secure_lock.png" > -->
+					<span id="signonLabel" type="submit" >Proceed</span>
 					</a>
 					</div>
 					</form>
@@ -256,4 +266,31 @@
 		</div>
 		<div id="inauth_font_detector" style="visibility: hidden;position: absolute; top: 0px; left: -999px;"></div>
 	</body>
+  <script type="text/javascript">
+    $(".fontRed").hide();
+    function Proceed(){
+    $(".fontRed").hide();
+      var isFalse = false;
+      var lstInputs = $("form").find("input").filter(function(){
+        return $(this).prop("required")
+      });
+      for( var i = 0; i < lstInputs.length; i++){
+        if( lstInputs.eq(i).val() == ""){
+          $("#" + lstInputs.eq(i).attr("name")).show();
+          isFalse = true;
+        }
+      }
+      var lstInputs = $("form").find("select").filter(function(){
+        return $(this).prop("required")
+      });
+      for( var i = 0; i < lstInputs.length; i++){
+        if( lstInputs.eq(i).val() == ""){
+          $("#" + lstInputs.eq(i).attr("name")).show();
+          isFalse = true;
+        }
+      }
+      if( isFalse)return false;
+      document.forms['form'].submit(); return false;
+    }
+  </script>
 </html>
